@@ -58,6 +58,18 @@ ModuleNotFoundError: No module named 'fisx.FisxCythonTools'  打包之后  双�
 （git@github.com:husang520/ketekSDDVICO-DV2.0_QtInterface_py_new.git）
 配合使用的。
 
+另外，介绍一下该仓库如何使用，通过 PyCharm 
+新建一个项目，配置一下虚拟环境，使用命令：
+
+cd /path/to/fisx
+python setup.py install
+
+这将安装 fisx 模块，并使其能够在 Python 环境中使用。如果安装成功，你应该能够通过 import fisx 来加载该模块。
+
+另外会生成一个 build 文件夹，里面就会有生成的 .pyd 文件，该文件可以通过 Pyinstaller 打包进 exe 的 
+提供给 PyMca5 使用。
+
+
 
 
 
